@@ -9,48 +9,65 @@
 
 @font-face {
     font-family: 'fortnite';
-    src: url("/fontes/fortnite.otf");
+    src: url("/fonts/fortnite.otf");
 }
 
 body {
     /* EDITAR NO PHOTOSHOP = DIMINUIR OPACIDADE E DEIXAR ESCURINHO */
-    
+
     background-image: url(../images/FBG.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
 }
 
-.container {
+.container{
+
+    height: 100vh;
     
     display: flex;
-    flex-direction: column;
-    height: 100vh;
-
     flex-wrap: wrap;
 
-    justify-content: center;
     align-content: center;
-
-}
-
-form{
-
-    display: flex;
     justify-content: center;
+
+    flex-direction: column;
 
 }
 
 input {
 
     outline: auto;
-
     color: rgb(0, 0, 0);
+
     font-size: 28px;
+
     width: 80%;
     padding: 5px;
+
     background-color: #fcf5f5;
-    border: 5px;
+
     border-radius: 4px;
     text-align: center;
-    margin-top: 30px;
+
+    margin-left: 1.3rem;
+    margin-top: 0.8rem;
+
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    }
+
+footer, h1{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.test{
+    height: 5000px;
 }
